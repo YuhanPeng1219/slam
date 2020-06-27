@@ -3,3 +3,6 @@
 /home/yuhan/CLionProjects/Eigen/UseEigen/CMakeFiles/rebuild_cache.dir
 /home/yuhan/CLionProjects/Eigen/UseEigen/CMakeFiles/edit_cache.dir
 /home/yuhan/CLionProjects/Eigen/UseEigen/CMakeFiles/main.dir
+/home/yuhan/CLionProjects/Eigen/EigenGeo/CMakeFiles/rebuild_cache.dir
+/home/yuhan/CLionProjects/Eigen/EigenGeo/CMakeFiles/edit_cache.dir
+/home/yuhan/CLionProjects/Eigen/EigenGeo/CMakeFiles/geo.dir

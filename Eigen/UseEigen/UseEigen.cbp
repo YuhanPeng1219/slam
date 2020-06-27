@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="UseEigen"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\UseEigen\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/yuhan/CLionProjects/Eigen/UseEigen"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/yuhan/CLionProjects/Eigen/UseEigen/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yuhan/CLionProjects/Eigen/UseEigen/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yuhan/CLionProjects/Eigen/UseEigen/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yuhan/CLionProjects/Eigen/UseEigen/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main">
+				<Option output="/home/yuhan/CLionProjects/Eigen/UseEigen/main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuhan/CLionProjects/Eigen/UseEigen"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/yuhan/CLionProjects/Eigen/UseEigen/Makefile&quot;  VERBOSE=1 main"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yuhan/CLionProjects/Eigen/UseEigen/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yuhan/CLionProjects/Eigen/UseEigen/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yuhan/CLionProjects/Eigen/UseEigen/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main/fast">
+				<Option output="/home/yuhan/CLionProjects/Eigen/UseEigen/main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuhan/CLionProjects/Eigen/UseEigen"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/yuhan/CLionProjects/Eigen/UseEigen/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yuhan/CLionProjects/Eigen/UseEigen/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yuhan/CLionProjects/Eigen/UseEigen/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yuhan/CLionProjects/Eigen/UseEigen/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/yuhan/CLionProjects/Eigen/EigenGeo/main.cpp">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="/home/yuhan/CLionProjects/Eigen/UseEigen/main.cpp">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="/home/yuhan/CLionProjects/Eigen/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/yuhan/CLionProjects/Eigen/UseEigen/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\UseEigen\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

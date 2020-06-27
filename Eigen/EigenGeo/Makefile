@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuhan/CLionProjects/Eigen/CMakeFiles /home/yuhan/CLionProjects/Eigen/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/yuhan/CLionProjects/Eigen && $(CMAKE_COMMAND) -E cmake_progress_start /home/yuhan/CLionProjects/Eigen/CMakeFiles /home/yuhan/CLionProjects/Eigen/EigenGeo/CMakeFiles/progress.marks
+	cd /home/yuhan/CLionProjects/Eigen && $(MAKE) -f CMakeFiles/Makefile2 EigenGeo/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuhan/CLionProjects/Eigen/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/yuhan/CLionProjects/Eigen && $(MAKE) -f CMakeFiles/Makefile2 EigenGeo/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,44 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/yuhan/CLionProjects/Eigen && $(MAKE) -f CMakeFiles/Makefile2 EigenGeo/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/yuhan/CLionProjects/Eigen && $(MAKE) -f CMakeFiles/Makefile2 EigenGeo/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yuhan/CLionProjects/Eigen && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named main
+# Convenience name for target.
+EigenGeo/CMakeFiles/geo.dir/rule:
+	cd /home/yuhan/CLionProjects/Eigen && $(MAKE) -f CMakeFiles/Makefile2 EigenGeo/CMakeFiles/geo.dir/rule
+.PHONY : EigenGeo/CMakeFiles/geo.dir/rule
 
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+# Convenience name for target.
+geo: EigenGeo/CMakeFiles/geo.dir/rule
 
-# fast build rule for target.
-main/fast:
-	$(MAKE) -f UseEigen/CMakeFiles/main.dir/build.make UseEigen/CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-#=============================================================================
-# Target rules for targets named geo
-
-# Build rule for target.
-geo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geo
 .PHONY : geo
 
 # fast build rule for target.
 geo/fast:
-	$(MAKE) -f EigenGeo/CMakeFiles/geo.dir/build.make EigenGeo/CMakeFiles/geo.dir/build
+	cd /home/yuhan/CLionProjects/Eigen && $(MAKE) -f EigenGeo/CMakeFiles/geo.dir/build.make EigenGeo/CMakeFiles/geo.dir/build
 .PHONY : geo/fast
+
+geo.o: geo.cpp.o
+
+.PHONY : geo.o
+
+# target to build an object file
+geo.cpp.o:
+	cd /home/yuhan/CLionProjects/Eigen && $(MAKE) -f EigenGeo/CMakeFiles/geo.dir/build.make EigenGeo/CMakeFiles/geo.dir/geo.cpp.o
+.PHONY : geo.cpp.o
+
+geo.i: geo.cpp.i
+
+.PHONY : geo.i
+
+# target to preprocess a source file
+geo.cpp.i:
+	cd /home/yuhan/CLionProjects/Eigen && $(MAKE) -f EigenGeo/CMakeFiles/geo.dir/build.make EigenGeo/CMakeFiles/geo.dir/geo.cpp.i
+.PHONY : geo.cpp.i
+
+geo.s: geo.cpp.s
+
+.PHONY : geo.s
+
+# target to generate assembly for a file
+geo.cpp.s:
+	cd /home/yuhan/CLionProjects/Eigen && $(MAKE) -f EigenGeo/CMakeFiles/geo.dir/build.make EigenGeo/CMakeFiles/geo.dir/geo.cpp.s
+.PHONY : geo.cpp.s
 
 # Help Target
 help:
@@ -144,8 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... main"
 	@echo "... geo"
+	@echo "... geo.o"
+	@echo "... geo.i"
+	@echo "... geo.s"
 .PHONY : help
 
 
@@ -157,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yuhan/CLionProjects/Eigen && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
